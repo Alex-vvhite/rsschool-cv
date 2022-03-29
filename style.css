@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li,
+ol{
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,body{
+    width: 100%;
+    line-height: 1;
+    font-size: 20px;
+    color:black;
+    background-color: #262626;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/*===================================HEADER=========================================*/
+.header_items{
+    display: flex;
+    margin-top: 30px;
+}
+.header-menu{
+    margin-left: 400px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-link{
+    font-family: 'Kdam Thmor';
+    line-height: 180%;
+    color:#FFFFFF;
+    transition: 0.2s;
+}
+.nav-link:hover{
+    color: #16801A;
+}
+.nav-item:not(:last-child){
+    margin-right: 50px;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px; 
+    background-color: #16801A; 
+    content: "";
+    transition: width 0.2s ease-out;
+}
+.nav-item:hover:after,.nav-item:focus:after{
+    width: 100%;
+}
+
+.image-glav{
+    margin-left: 496px;
+    margin-top: 352px;
+}
