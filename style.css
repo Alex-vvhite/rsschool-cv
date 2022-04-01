@@ -42,6 +42,9 @@ html,body{
     margin: 0 auto;
 }
 /*===================================HEADER=========================================*/
+.header{
+    max-height: 46px;
+}
 .header_items{
     display: flex;
     margin-top: 30px;
@@ -80,8 +83,106 @@ html,body{
 .nav-item:hover:after,.nav-item:focus:after{
     width: 100%;
 }
-
+/*===================================section_first=========================================*/
+.section_first{
+    margin: 0 auto;
+}
 .image-glav{
     margin-left: 496px;
-    margin-top: 352px;
+    padding-top: 352px;
+}
+
+/*===================================section_about=========================================*/
+.section_about{
+    background-image: url(image/about_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 651px;
+    margin-top: 347px;
+}
+.section_name{
+    margin-left: 588px;
+    position: relative;
+    font-size: 50px;
+    font-family: 'Khula';
+    line-height: 160.56%;
+    color:#FFFFFF;
+    font-weight: 700;
+    padding-top: 97.5px;
+}
+.section_name:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 185px;
+    height: 2px; 
+    background-color: #16801A; 
+    content: "";
+    bottom: 13.77px;
+}
+.section_items{
+    display: flex;
+}
+.image{
+    width: 336px;
+    margin-left: 121px;
+    margin-top: 49px;
+}
+.image_text{
+    margin-left: 117px;
+    font-weight: 400;
+    font-family:'Khula' ;
+    color: #FFFFFF;
+    line-height: 161%;
+    margin-top: 23px;
+}
+.ttt{
+    margin-top: 28px;
+}
+.lists{
+    display:flex;
+    margin-top: 11px;
+}
+.list-2{
+    margin-left: 35px;
+}
+.uuu{
+    margin-left: 94px;
+}
+.section_text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 161%;
+    font-family: 'Khula';
+    color: #FFFFFF;
+    max-width: 468px;
+    min-height: 220px;
+    margin-left: 376px;
+    margin-top: 49px;
+}
+.education{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Khula';
+    line-height: 161%;
+    color: #FFFFFF;
+}
+.ed{margin-top: 26px;
+margin-bottom: 12px;}
+.education-list{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Khula';
+    line-height: 161%;
+}
+.education-item{
+    list-style:inside;
+    padding-left: 11px;
+}
+.lists{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 161%;
+    font-family: 'Khula';
+    color: #FFFFFF;
 }
