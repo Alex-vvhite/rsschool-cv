@@ -56,10 +56,12 @@ html,body{
     display: flex;
 }
 .nav-link{
-    font-family: 'Kdam Thmor';
-    line-height: 180%;
+    font-family:'Kdam Thmor';
+    line-height: 175%;
     color:#FFFFFF;
     transition: 0.2s;
+    font-weight: 400;
+    font-size: 20px;
 }
 .nav-link:hover{
     color: #16801A;
@@ -82,6 +84,13 @@ html,body{
 }
 .nav-item:hover:after,.nav-item:focus:after{
     width: 100%;
+}
+.social_block{
+    display: flex;
+    margin-left: 224px;
+}
+.link-l:not(:last-child){
+    margin-right: 35px;
 }
 /*===================================section_first=========================================*/
 .section_first{
@@ -306,3 +315,59 @@ margin-bottom: 12px;}
     line-height: 133.3%;
     font-size: 18px;
 }
+/*===================================section_education=========================================*/
+.footer{
+    height: 284px;
+}
+.items_footer{
+    display: flex;
+}
+.item_footer{
+    color: #FFFFFF;
+}
+.item_footer:nth-child(1){
+    margin-top: 110px;
+}
+.item_footer:nth-child(2){
+    display: flex;
+    margin-top: 57px;
+    margin-left: 273px;
+}
+.item_footer:nth-child(3){
+    margin-left: 241px;
+    margin-top: 57px;
+}
+.item_footer:nth-child(4){
+    margin-left: 77px;
+    margin-top: 122px;
+}
+.section_section{
+    line-height: 160.5%;
+    font-weight: 600;
+    font-family: 'Khula';
+}
+.footer-link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160.5%;
+}
+.section_section-2{
+    line-height: 160.5%;
+    font-weight: 600;
+    font-family: 'Khula';
+}
+.footer-item-2{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165.5%;
+    font-family: 'Khula';
+}
+.img{
+    padding-right: 10px;
+}
+.ots{
+    margin-top: 33px;
+    margin-bottom: 10px;
+}
+.ots2{margin-bottom: 10px;}
