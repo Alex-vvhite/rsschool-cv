@@ -185,10 +185,9 @@ margin-bottom: 12px;}
     font-family: 'Khula';
     color: #FFFFFF;
 }
-/*===================================section_about=========================================*/
+/*===================================section_skills=========================================*/
 .section_skills{
     height: 668px;
-    
 }
 .section_name_2{
     position: relative;
@@ -251,4 +250,59 @@ margin-bottom: 12px;}
     background-image: url(image/charp.svg);
     background-repeat: no-repeat;
     background-size:125px 140px;
+}
+/*===================================section_education=========================================*/
+.section_education{
+    height: 766px;
+    background: #333333;
+}
+.section_name_3{
+    position: relative;
+    font-size: 50px;
+    font-family: 'Khula';
+    line-height: 160.56%;
+    color:#FFFFFF;
+    font-weight: 700;
+    margin-left: 527px;
+    padding-top: 83px;
+}
+.section_name_3::after{
+    width: 246px;  
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 2px; 
+    background-color: #16801A; 
+    content: "";
+    bottom: 13.77px;
+}
+.education_items{
+    display: flex;
+    justify-content: space-between;
+}
+.education_item:nth-child(1){
+    width: 567px;
+    min-height: 475px;
+    background: #16801A;
+    border-radius: 50px 50px 50px 0px;
+    margin-top: 30px;
+}
+.education_item:nth-child(2){
+    width: 567px;
+    min-height: 475px;
+    background: #16801A;
+    border-radius: 61px 61px 0px 50px;
+    margin-top: 30px;
+}
+.item_code_block{
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.item_e{
+    color: #FFFFFF;
+    font-family: 'Fira Code';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133.3%;
+    font-size: 18px;
 }

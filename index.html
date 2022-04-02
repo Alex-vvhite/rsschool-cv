@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -103,7 +107,58 @@
         </section>
         <section class="section_education">
             <div class="container section_education_container">
-                
+                <h2 class="section_name_3">
+                    Code Examples
+                </h2>
+                <div class="education_items">
+                    <div class="education_item">
+                        <div class="item_code_block">
+                            <pre>
+                                <code class="item_e">
+    function printerError(s) {
+        let x=0
+        let y=0
+        let prov = 0;
+        const alphabet = 'abcdefghijklm'
+        for(let sel of s.split('')){
+        x+=1
+        for(let sell of alphabet){
+                if(sell= = =sel){
+                prov+=1
+                }
+        }
+        }
+        y = x-prov
+        const result = `${y}/${x}`
+        return result                                                   
+        }
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="education_item">
+                        <div class="item_code_block">
+                            <pre>
+                                <code class="item_e">
+    function findNextSquare(sq) {
+        // Return the next square if sq is
+            a perfect square, -1 otherwise
+        let sq1 = sq
+        if(Math.sqrt(sq)%1===0){
+            do{
+            sq1++
+            }while(Math.sqrt(sq1)%1!==0)
+        }
+        else{
+        return -1;}
+                                                      
+            return sq1
+        }
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
