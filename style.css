@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li,
+ol{
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,body{
+    width: 100%;
+    line-height: 1;
+    font-size: 20px;
+    color:black;
+    background-color: #262626;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/*===================================HEADER=========================================*/
+.header{
+    max-height: 46px;
+}
+.header_items{
+    display: flex;
+    margin-top: 30px;
+}
+.header-menu{
+    margin-left: 400px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-link{
+    font-family:'Kdam Thmor';
+    line-height: 175%;
+    color:#FFFFFF;
+    transition: 0.2s;
+    font-weight: 400;
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: #16801A;
+}
+.nav-item:not(:last-child){
+    margin-right: 50px;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px; 
+    background-color: #16801A; 
+    content: "";
+    transition: width 0.2s ease-out;
+}
+.nav-item:hover:after,.nav-item:focus:after{
+    width: 100%;
+}
+.social_block{
+    display: flex;
+    margin-left: 224px;
+}
+.link-l:not(:last-child){
+    margin-right: 35px;
+}
+/*===================================section_first=========================================*/
+.section_first{
+    margin: 0 auto;
+}
+.image-glav{
+    margin-left: 496px;
+    padding-top: 352px;
+}
+/*===================================section_about=========================================*/
+.section_about{
+    background-image: url(image/about_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 651px;
+    margin-top: 347px;
+}
+.section_name{
+    margin-left: 588px;
+    position: relative;
+    font-size: 50px;
+    font-family: 'Khula';
+    line-height: 160.56%;
+    color:#FFFFFF;
+    font-weight: 700;
+    padding-top: 97.5px;
+}
+.section_name:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 185px;
+    height: 2px; 
+    background-color: #16801A; 
+    content: "";
+    bottom: 13.77px;
+}
+.section_items{
+    display: flex;
+}
+.image{
+    width: 336px;
+    margin-left: 121px;
+    margin-top: 49px;
+}
+.image_text{
+    margin-left: 117px;
+    font-weight: 400;
+    font-family:'Khula' ;
+    color: #FFFFFF;
+    line-height: 161%;
+    margin-top: 23px;
+}
+.ttt{
+    margin-top: 28px;
+}
+.lists{
+    display:flex;
+    margin-top: 11px;
+}
+.list-2{
+    margin-left: 35px;
+}
+.uuu{
+    margin-left: 94px;
+}
+.section_text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 161%;
+    font-family: 'Khula';
+    color: #FFFFFF;
+    max-width: 468px;
+    min-height: 220px;
+    margin-left: 376px;
+    margin-top: 49px;
+}
+.education{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Khula';
+    line-height: 161%;
+    color: #FFFFFF;
+}
+.ed{margin-top: 26px;
+margin-bottom: 12px;}
+.education-list{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Khula';
+    line-height: 161%;
+}
+.education-item{
+    list-style:inside;
+    padding-left: 11px;
+}
+.lists{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 161%;
+    font-family: 'Khula';
+    color: #FFFFFF;
+}
+/*===================================section_skills=========================================*/
+.section_skills{
+    height: 668px;
+}
+.section_name_2{
+    position: relative;
+    font-size: 50px;
+    font-family: 'Khula';
+    line-height: 160.56%;
+    color:#FFFFFF;
+    font-weight: 700;
+    margin-left: 633px;
+    margin-top: 137px;
+}
+.section_name_2::after{
+    width: 85px;  
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 2px; 
+    background-color: #16801A; 
+    content: "";
+    bottom: 13.77px;
+}
+.skills_items{
+    display: flex;
+    justify-content: space-between;
+}
+.skill_item{
+    width: 220px;
+    height: 228px;
+    background-color: #16801A;
+    border-radius: 20px;
+    margin-top: 79px;
+    background-position: center;
+}
+.skill_item:nth-child(1){
+    background-image: url(image/html.svg);
+    background-repeat: no-repeat;
+    background-size:125px 140px;
+}
+.skill_item:nth-child(2){
+    background-image: url(image/css.svg);
+    background-repeat: no-repeat;
+    background-size:125px 140px;
+}
+.skill_item:nth-child(3){
+    background-image: url(image/js.svg);
+    background-repeat: no-repeat;
+    background-size:125px 140px;
+}
+.skill_item:nth-child(4){
+    background-image: url(image/java.svg);
+    background-repeat: no-repeat;
+    background-size:125px 140px;
+}
+.skill_item:nth-child(5){
+    background-image: url(image/c++.svg);
+    background-repeat: no-repeat;
+    background-size:125px 140px;
+}
+.skill_item:nth-child(6){
+    background-image: url(image/charp.svg);
+    background-repeat: no-repeat;
+    background-size:125px 140px;
+}
+/*===================================section_education=========================================*/
+.section_education{
+    height: 766px;
+    background: #333333;
+}
+.section_name_3{
+    position: relative;
+    font-size: 50px;
+    font-family: 'Khula';
+    line-height: 160.56%;
+    color:#FFFFFF;
+    font-weight: 700;
+    margin-left: 527px;
+    padding-top: 83px;
+}
+.section_name_3::after{
+    width: 246px;  
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 2px; 
+    background-color: #16801A; 
+    content: "";
+    bottom: 13.77px;
+}
+.education_items{
+    display: flex;
+    justify-content: space-between;
+}
+.education_item:nth-child(1){
+    width: 567px;
+    min-height: 475px;
+    background: #16801A;
+    border-radius: 50px 50px 50px 0px;
+    margin-top: 30px;
+}
+.education_item:nth-child(2){
+    width: 567px;
+    min-height: 475px;
+    background: #16801A;
+    border-radius: 61px 61px 0px 50px;
+    margin-top: 30px;
+}
+.item_code_block{
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.item_e{
+    color: #FFFFFF;
+    font-family: 'Fira Code';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133.3%;
+    font-size: 18px;
+}
+/*===================================section_education=========================================*/
+.footer{
+    height: 284px;
+}
+.items_footer{
+    display: flex;
+}
+.item_footer{
+    color: #FFFFFF;
+}
+.item_footer:nth-child(1){
+    margin-top: 110px;
+}
+.item_footer:nth-child(2){
+    display: flex;
+    margin-top: 57px;
+    margin-left: 273px;
+}
+.item_footer:nth-child(3){
+    margin-left: 241px;
+    margin-top: 57px;
+}
+.item_footer:nth-child(4){
+    margin-left: 77px;
+    margin-top: 122px;
+}
+.section_section{
+    line-height: 160.5%;
+    font-weight: 600;
+    font-family: 'Khula';
+}
+.footer-link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160.5%;
+}
+.section_section-2{
+    line-height: 160.5%;
+    font-weight: 600;
+    font-family: 'Khula';
+}
+.footer-item-2{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165.5%;
+    font-family: 'Khula';
+}
+.img{
+    padding-right: 10px;
+}
+.ots{
+    margin-top: 33px;
+    margin-bottom: 10px;
+}
+.ots2{margin-bottom: 10px;}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <div class="header_items">
+                <div class="header-logo">
+                    <a href="" class="header-link"><img src="image/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header-menu">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social_block">
+                    <div class="link-l"><a href=""><img src="image/header/gmail.svg" alt=""></a></div>
+                    <div class="link-l"><a href="https://t.me/Training_addist"><img src="image/header/tg.svg" alt=""></a></div>
+                    <div class="link-l"><a href="https://github.com/Alex-vvhite"><img src="image/header/git.svg" alt=""></a></div>
+                    <div class="link-l"><a href="https://www.instagram.com/khodyrev_12/"><img src="image/header/insta.svg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section_first">
+            <div class="container section_first_container">
+                <div class="image-glav"><img src="image/glav.png" alt="logo"></div>
+            </div>
+        </section>
+
+        <section class="section_about" id="about" >
+            <div class="container section_about_container">
+                <h2 class="section_name">
+                    About me
+                </h2>
+                <div class="section_items">
+
+                    <div class="image">
+                        <img src="image/about.png" alt="logo" class="uuu">
+                        <div class="image_text">
+                            Alex Khodyrev
+                        </div>
+                        <h3 class="education ttt">Languages</h3>
+                        <div class="lists">
+                            <ul class="education-list">
+                                <li class="education-item">Russian</li>
+                                <li class="education-item">Frеnch (basic)</li>
+                            </ul>
+                            <ul class="education-list list-2">
+                                <li class="education-item">English (basic)</li>
+                                <li class="education-item">Ukranian</li>
+                            </ul>
+                        </div>                       
+                    </div>
+
+                    <div class="section_text">
+                        <span>I am 20 years old, I am studying.</span>
+                        I was previously interested in creating sites from pure 0, so I have chosen this direction.
+                        At the university, the bias is more on the visual component, but I want to write the site's functionality. 
+                        Friends suggested your course, which immediately looked different from others. 
+                        I am sure I will be able to gain experience and create my first works together with your unique method of leading students.
+                  
+                   
+                        <h3 class="education ed">Education</h3>
+
+                        <ul class="education-list">
+                            Donetsk National Technical University
+                            <li class="education-item">Faculty of Computer Science and Technology</li>
+                            <li class="education-item">Specialty: modeling and design</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section_skills" id="skills">
+            <div class="container section_skills_container">
+                <h2 class="section_name_2">
+                    Skills
+                </h2>
+                <div class="skills_items">
+                    <div class="skill_item"></div>
+                    <div class="skill_item"></div>
+                    <div class="skill_item"></div>
+                    <div class="skill_item"></div>
+                    <div class="skill_item"></div>
+                    <div class="skill_item"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_education" id="code">
+            <div class="container section_education_container">
+                <h2 class="section_name_3">
+                    Code Examples
+                </h2>
+                <div class="education_items">
+                    <div class="education_item">
+                        <div class="item_code_block">
+                            <pre>
+                                <code class="item_e">
+    function printerError(s) {
+        let x=0
+        let y=0
+        let prov = 0;
+        const alphabet = 'abcdefghijklm'
+        for(let sel of s.split('')){
+        x+=1
+        for(let sell of alphabet){
+                if(sell= = =sel){
+                prov+=1
+                }
+        }
+        }
+        y = x-prov
+        const result = `${y}/${x}`
+        return result                                                   
+        }
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="education_item">
+                        <div class="item_code_block">
+                            <pre>
+                                <code class="item_e">
+    function findNextSquare(sq) {
+        // Return the next square if sq is
+            a perfect square, -1 otherwise
+        let sq1 = sq
+        if(Math.sqrt(sq)%1===0){
+            do{
+            sq1++
+            }while(Math.sqrt(sq1)%1!==0)
+        }
+        else{
+        return -1;}
+                                                      
+            return sq1
+        }
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer_container" id="contact">
+            <div class="items_footer">
+                <div class="item_footer">
+                    <img src="image/footer/footer_logo.svg" alt="logo_footer">
+                </div>
+                <div class="item_footer">
+                    
+                    <ul class="footer-list">
+                        <h4 class="section_section">Sections</h4>
+                        <li class="footer-item"><a href="#about" class="footer-link">About me</a></li>
+                        <li class="footer-item"><a href="#skills" class="footer-link">Skills</a></li>
+                        <li class="footer-item"><a href="#education" class="footer-link">Education</a></li>
+                        <li class="footer-item"><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="item_footer">
+                  
+                        <h4 class="section_section-2">Contact</h4>
+                        <div class="footer-item-2 ots">
+                            <div class="img"><img src="image/footer/gmail.svg" alt=""></div>
+                            khodyrev.aleksej42@gmail.com
+                        </div>
+                        <div class="footer-item-2">
+                            <div class="img"><img src="image/footer/tg.svg" alt=""></div>
+                            <a href="https://t.me/Training_addist">@Training_addist</a> 
+                        </div>
+              
+                </div>
+                <div class="item_footer">
+                    <div class="footer-item-2 ots2">
+                        <div class="img"><img src="image/footer/git.svg" alt=""></div>
+                        <a href="https://github.com/Alex-vvhite">github.com/Alex-vvhite</a>
+                    </div>
+                    <div class="footer-item-2">
+                        <div class="img"><img src="image/footer/insta.svg" alt=""></div>
+                        <a href="https://www.instagram.com/khodyrev_12/">@khodyrev12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
