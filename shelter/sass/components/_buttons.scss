@@ -1,0 +1,17 @@
+/*===================================button:start_screen=========================================*/
+.friend{
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    padding: 15px 45px 15px 45px;
+    background-color: #F1CDB3;
+    border-radius: 100px;
+    transition: 0.2s;
+    margin-top: 42px;
+    &:hover{
+        background-color: #FDDCC4;
+    }
+}
