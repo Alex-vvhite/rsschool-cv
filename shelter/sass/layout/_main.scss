@@ -74,6 +74,9 @@
         .pets_items{
             min-height: 697px;
             text-align: center;
+            .name__pets{
+                padding-top: 80px;
+            }
             .slider_blocks{
                 display: flex;
                 justify-content: space-between;
@@ -117,6 +120,9 @@
     .help__container{
         min-height: 431px;
         margin: 0 auto;
+        .name__help{
+            padding-top: 80px;
+        }
         .icons{
             display: flex;
             flex-wrap: wrap;
@@ -136,6 +142,69 @@
                 letter-spacing: 0.06em;
                 color: #545454;
                 padding-top: 30px;
+            }
+        }
+    }
+}
+/*===================================donation=========================================*/
+.donation{
+    min-height: 462px;
+    background-color:  #F6F6F6;
+    .donation__container{
+        min-height: 282px;
+        .donation__items{
+            display: flex;
+            padding-top: 80px;
+            justify-content: center;
+            .item__info{
+                max-width: 380px;
+                margin-left: 30px;
+                .name__donation{
+                    align-items: flex-start;
+                }
+                .text{
+                    font-family: 'Georgia';
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 110%;
+                    letter-spacing: 0.06em;
+                    color: #545454;
+                    margin-top: 20px;
+                }
+                .credit__cart{
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                    padding:10px 15px;
+                    background: #F1CDB3;
+                    border-radius: 9px;
+                    display: flex;
+                    justify-content: center;
+                    width: 349px;
+                    .number{
+                        width: 319px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-family: 'Georgia';
+                        letter-spacing: 0.06em;
+                        color: #545454;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 115%;
+                        background: url(image/main/donation/credit-card.svg) no-repeat left;
+                        .card__image{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+                .text_2{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-family: 'Arial';
+                    font-style: italic;
+                    color: #B2B2B2;
+                }
             }
         }
     }
