@@ -1,0 +1,17 @@
+.name_block{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-family: 'Georgia';
+    color: #545454;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 80px;
+    .name{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}

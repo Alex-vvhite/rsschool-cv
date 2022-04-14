@@ -74,23 +74,6 @@
         .pets_items{
             min-height: 697px;
             text-align: center;
-            .name_block{
-                font-weight: 400;
-                font-size: 35px;
-                line-height: 130%;
-                letter-spacing: 0.06em;
-                font-family: 'Georgia';
-                color: #545454;
-                max-width: 400px;
-                margin: 0 auto;
-                padding-top: 80px;
-                .name{
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    flex-direction: column;
-                }
-            }
             .slider_blocks{
                 display: flex;
                 justify-content: space-between;
@@ -128,4 +111,32 @@
         }
     }
 }
-
+/*===================================help=========================================*/
+.help{
+    min-height: 611px;
+    .help__container{
+        min-height: 431px;
+        margin: 0 auto;
+        .icons{
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 55px;
+            padding-top: 60px;
+            column-gap: 120px;
+            text-align: center;
+            justify-content: center;
+            .icon{
+                min-height: 113px;
+            }
+            .icon__name{
+                font-family: 'Georgia';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+                color: #545454;
+                padding-top: 30px;
+            }
+        }
+    }
+}
