@@ -45,6 +45,11 @@
     color: #CDCDCD;
     transition: 0.2s;
 }
+.link-first{
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 6px;
+}
 .nav-item:not(:last-child){
     margin-right: 35px;
 }

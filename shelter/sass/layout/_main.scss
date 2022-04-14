@@ -1,7 +1,5 @@
 /*===================================start_screen=========================================*/
-.start_screen{
-    // display: flex;
-    // justify-content: space-between;
+.start_screen{  
     height: 788px;
     width: 100%;
     background-image: url(image/main/main-bg.png);
@@ -31,6 +29,7 @@
             line-height: 160%;
             color: #CDCDCD;
             margin-top: 42px;
+            margin-bottom: 42px;
         }
     }
 }
@@ -39,7 +38,7 @@
     min-height: 588px;
     .about_items{
         min-height: 408px;
-        margin-top: 80px;
+        padding-top: 80px;
         padding-left: 175px;
         padding-right: 175px;
         width: 1200px;
@@ -67,3 +66,66 @@
         }
     }
 }
+/*===================================pets=========================================*/
+.pets{
+    background: #F6F6F6;
+    .pets_container{
+        min-height: 877px;
+        .pets_items{
+            min-height: 697px;
+            text-align: center;
+            .name_block{
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+                font-family: 'Georgia';
+                color: #545454;
+                max-width: 400px;
+                margin: 0 auto;
+                padding-top: 80px;
+                .name{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+            }
+            .slider_blocks{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                .scroll{
+                    width: 52px;
+                    height: 52px;
+                    border: 2px solid #F1CDB3;
+                    box-sizing: border-box;
+                    border-radius: 100px;
+                    transition: 0.2s;
+                    &:hover{
+                        background: #FDDCC4;
+                        border: 2px solid #FDDCC4;
+                    }
+                }
+                .block_pet{
+                    min-height: 435px;
+                    background-color: #FAFAFA;
+                    border-radius: 9px;
+                    .name_pets{
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 115%;
+                        font-family: 'Georgia';
+                        letter-spacing: 0.06em;
+                        color: #545454;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
