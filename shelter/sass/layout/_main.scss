@@ -21,6 +21,9 @@
             color: #FFFFFF;
             font-family: 'Georgia';
             font-weight: 400;
+            .name__start{
+                text-align: left;
+            }
         }
         .text_block{
             font-family: 'Arial';
@@ -76,6 +79,8 @@
             text-align: center;
             .name__pets{
                 padding-top: 80px;
+                margin: 0 auto;
+                letter-spacing: 0.06em;
             }
             .slider_blocks{
                 display: flex;
@@ -83,36 +88,25 @@
                 align-items: center;
                 margin-top: 60px;
                 margin-bottom: 60px;
-                .scroll{
-                    width: 52px;
-                    height: 52px;
-                    border: 2px solid #F1CDB3;
-                    box-sizing: border-box;
-                    border-radius: 100px;
-                    transition: 0.2s;
-                    &:hover{
-                        background: #FDDCC4;
-                        border: 2px solid #FDDCC4;
-                    }
+                .scroll-arrow:first-child{
+                    background-image: url(image/main/pets/left.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
-                .block_pet{
-                    min-height: 435px;
-                    background-color: #FAFAFA;
-                    border-radius: 9px;
-                    .name_pets{
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 115%;
-                        font-family: 'Georgia';
-                        letter-spacing: 0.06em;
-                        color: #545454;
-                        margin-top: 30px;
-                        margin-bottom: 30px;
-                    }
+                .scroll-arrow:last-child{
+                    background-image: url(image/main/pets/right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
             }
         }
     }
+}
+.block_pet{
+    min-height: 435px;
+    background-color: #FAFAFA;
+    border-radius: 9px;
+    text-align: center;
 }
 /*===================================help=========================================*/
 .help{
@@ -122,6 +116,8 @@
         margin: 0 auto;
         .name__help{
             padding-top: 80px;
+            margin: 0 auto;
+            letter-spacing: 0.06em;
         }
         .icons{
             display: flex;
