@@ -1,54 +1,148 @@
+.main{
+    overflow: hidden;
+}
 /*===================================start_screen=========================================*/
 .start_screen{  
     height: 788px;
     width: 100%;
-    background-image: url(image/main/main-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    .item_image{
-        float:right;
-        padding-top: 60px;
-        max-width: 698px;
+    @include table{
+        height: 1075px;
     }
-    .item_info{
-        max-width: 460px;
-        padding-top: 223px;
-        .name_block{
-            max-width: 310px;
-            font-size: 44px;
-            line-height: 130%;
-            color: #FFFFFF;
-            font-family: 'Georgia';
-            font-weight: 400;
-            .name__start{
-                text-align: left;
+    @include mobile{
+        height: 733px;
+    }
+    .start_screen-items{
+       display: flex;
+       justify-content: space-between;
+       @include table{
+        flex-direction: column;
+        align-items: center;
+       }
+        .item_image{
+            margin-top: 60px;
+            min-width: 698px;
+            min-height: 728px;
+          
+            background-image: url(image/main/start_screen/dog.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            @include table{
+                margin-top: 100px;
+                background-image: url(image/main/start_screen/dog-table.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                min-width: 569px;
+                min-height: 593px;
+               }
+            @include mobile{
+                background-image: url(image/main/start_screen/dog-mobile.png);
+                min-width: 260px;
+                min-height: 272px;
+                margin-top: 105px;
             }
         }
-        .text_block{
-            font-family: 'Arial';
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 160%;
-            color: #CDCDCD;
-            margin-top: 42px;
-            margin-bottom: 42px;
+        .item_info{
+            max-width: 460px;
+            padding-top: 223px;
+            @include table{
+                padding-top: 60px;
+                text-align: center;
+            }
+            @include mobile{
+                max-width: 300px;
+            }
+            .name_block{
+                max-width: 310px;
+                font-size: 44px;
+                line-height: 130%;
+                font-style: normal;
+                color: #FFFFFF;
+                font-family: 'Georgia';
+                font-weight: 400;
+                @include mobile{
+                    font-size: 25px;
+                    letter-spacing: 0.06em;
+                    padding: 0px 20px 0px 20px;
+                }
+                .name__start{
+                    text-align: left;
+                    @include mobile{
+                        text-align: center;
+                    }
+                }
+            }
+            .text_block{
+                font-family: 'Arial';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 160%;
+                color: #CDCDCD;
+                margin-top: 42px;
+                margin-bottom: 42px;
+            }
         }
     }
 }
 /*===================================about=========================================*/
+.about{background-color: #FFFFFF;}
 .about_container{
     min-height: 588px;
     .about_items{
         min-height: 408px;
         padding-top: 80px;
-        padding-left: 175px;
-        padding-right: 175px;
-        width: 1200px;
+        // padding-left: 175px;
+        // padding-right: 175px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        .item_image{
+            background-image: url(image/main/about/dogs.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 408px;
+            width: 300px;
+        }
+        @include table{
+            flex-direction: column-reverse;
+            padding-top: 60px;
+            padding-left: 160px;
+            padding-right: 160px;
+            align-items: center;
+            .item_image{
+                // text-align: center;
+                margin-top: 80px;
+                margin-bottom: 100px;
+                background-image: url(image/main/about/dogs.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 408px;
+                width: 300px;
+            }
+        }
+        @include mobile {
+            max-width: 320px;
+            padding-left: 0;
+            padding-right: 0;
+            align-items: center;
+            padding-top: 42px;
+            .item_image{
+                margin-top: 42px;
+                background-image: url(image/main/about/dog-mobile.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 353px;
+                width: 260px;
+                margin-bottom: 42px;
+            }
+        }
         .item_info{
             max-width: 430px;
+           @include table{
+               width: 430px;
+           }
+            @include mobile{
+                max-width: 270px;
+            }
+
             .name_block{
                 font-weight: 400;
                 font-size: 35px;
@@ -57,6 +151,17 @@
                 letter-spacing: 0.06em;
                 color: #545454;
                 max-width: 370px;
+                .name{
+                    text-align: left;
+                    @include mobile{
+                        text-align: center;
+                    }
+                }
+                @include mobile{
+                    font-size: 25px;
+                    max-width: 300px;
+                }
+
             }
             .text_block{
                 font-weight: 400;
@@ -74,13 +179,24 @@
     background: #F6F6F6;
     .pets_container{
         min-height: 877px;
+        @include mobile{
+            min-height: 791px;
+        }
         .pets_items{
             min-height: 697px;
             text-align: center;
+            @include mobile{
+                padding-bottom: 42px;
+                min-height: 707px;
+            }
             .name__pets{
                 padding-top: 80px;
                 margin: 0 auto;
                 letter-spacing: 0.06em;
+                @include mobile{
+                    font-size: 25px;
+                    padding-top: 42px;
+                }
             }
             .slider_blocks{
                 display: flex;
@@ -88,15 +204,41 @@
                 align-items: center;
                 margin-top: 60px;
                 margin-bottom: 60px;
+                @include table{
+                    .block_pet:nth-child(3){
+                        display: none;
+                    }
+                }
+                @include mobile{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-bottom: 42px;
+                    .block_pet:nth-child(2){
+                        order: -1;
+                    }
+                    .block_pet:nth-child(1){
+                        display: none;
+                    }
+                    .block_pet:nth-child(4){
+                        display: none;
+                    }
+                  
+                }
                 .scroll-arrow:first-child{
                     background-image: url(image/main/pets/left.svg);
                     background-repeat: no-repeat;
                     background-position: center;
+                    @include mobile{
+                        margin-right: 40px;
+                    }
                 }
                 .scroll-arrow:last-child{
                     background-image: url(image/main/pets/right.svg);
                     background-repeat: no-repeat;
                     background-position: center;
+                    @include mobile{
+                        margin-left: 40px;
+                    }
                 }
             }
         }
@@ -111,6 +253,8 @@
 /*===================================help=========================================*/
 .help{
     min-height: 611px;
+    background-color: #FFFFFF;
+    width: 100%;
     .help__container{
         min-height: 431px;
         margin: 0 auto;
@@ -118,26 +262,58 @@
             padding-top: 80px;
             margin: 0 auto;
             letter-spacing: 0.06em;
+            @include mobile{
+                font-size: 25px;
+            }
         }
         .icons{
             display: flex;
             flex-wrap: wrap;
             row-gap: 55px;
             padding-top: 60px;
-            column-gap: 120px;
+            //column-gap: 120px;
             text-align: center;
             justify-content: center;
+            @include table{
+                row-gap: 55px;
+                padding-bottom: 100px;
+            }
+            @include mobile{
+                display: inline-flex;
+                justify-content: flex-start;
+                column-gap: 60px;
+                margin-left: 15px;
+            }
             .icon{
-                min-height: 113px;
+                width: 170px;
+                height: 113px;
+                margin-right: 60px;
+                @include table{
+                  text-align: center;
+                  margin-right: 30px;
+                  margin-left: 30px;
+                }
+                @include mobile{
+                  text-align: center;
+                  margin: 0;
+                  width: 100px;
+                  height: 87px;
+                }
             }
             .icon__name{
                 font-family: 'Georgia';
                 font-weight: 400;
+                font-style: normal;
                 font-size: 20px;
                 line-height: 115%;
                 letter-spacing: 0.06em;
                 color: #545454;
                 padding-top: 30px;
+                @include mobile{
+                    font-size: 15px;
+                    line-height: 110%;
+                    padding-top: 20px;
+                }
             }
         }
     }
@@ -152,11 +328,59 @@
             display: flex;
             padding-top: 80px;
             justify-content: center;
+            @include mobile{
+                padding-top: 42px;
+            }
+            .item__dog{
+                background-image: url(image/main/donation/donation-dog.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 505px;
+                height: 261px;
+                @include table{
+                    margin-bottom: 100px;
+                }
+            }
+            @include table{
+                flex-direction: column-reverse;
+                align-items: center;
+                .item__dog{
+                    padding-bottom: 100px;
+                }
+            }
+            @include mobile{
+                .item__dog{
+                background-image: url(image/main/donation/mobile-dog.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width:260px ;
+                height: 135px;
+                    margin-bottom: 42px;
+                }
+            }
             .item__info{
                 max-width: 380px;
                 margin-left: 30px;
+                @include table{
+                    padding-bottom: 60px;
+                }
+                @include mobile{
+                    max-width: 300px;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 .name__donation{
                     align-items: flex-start;
+                    @include mobile{
+                        font-size: 25px;
+                        justify-content: center;
+                        max-width: 200px;
+                        .enter{
+                            text-align: center;
+                        }
+                    }
                 }
                 .text{
                     font-family: 'Georgia';
@@ -166,6 +390,10 @@
                     letter-spacing: 0.06em;
                     color: #545454;
                     margin-top: 20px;
+                    @include mobile{
+                        line-height: 160%;
+                        letter-spacing: 0;
+                    }
                 }
                 .credit__cart{
                     margin-bottom: 20px;
@@ -188,9 +416,18 @@
                         font-size: 20px;
                         line-height: 115%;
                         background: url(image/main/donation/credit-card.svg) no-repeat left;
+                      
                         .card__image{
                             margin-right: 15px;
                         }
+                        @include mobile{
+                            font-size: 15px;
+                            line-height: 110%;
+                            background-size: 32px 17px;
+                        }
+                    }
+                    @include mobile{
+                        width: 281px;
                     }
                 }
                 .text_2{
@@ -200,6 +437,10 @@
                     font-family: 'Arial';
                     font-style: italic;
                     color: #B2B2B2;
+                    @include mobile{
+                        max-width: 280px;
+                        text-align: justify;
+                    }
                 }
             }
         }
