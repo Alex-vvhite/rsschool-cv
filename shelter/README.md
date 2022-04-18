@@ -1,0 +1,1 @@
+https://github.com/Alex-vvhite/rsschool-cv/tree/shelter-part2/shelter
