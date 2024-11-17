@@ -92,3 +92,12 @@ html,body{
 .item{
     list-style: disc;
 }
+/* FOOTER */
+.footer{
+    margin-top: 100px;
+}
+.text_footer{
+    font-family: "Geist Mono", monospace;
+    font-size: 20px;
+    text-align: center;
+}
