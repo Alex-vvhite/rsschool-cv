@@ -1,1 +1,1 @@
-https://alex-vvhite.github.io/rsschool-cv/index
+https://alex-vvhite.github.io/rsschool-cv/
